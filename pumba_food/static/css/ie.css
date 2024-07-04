@@ -1,0 +1,32 @@
+
+#form .invalid .error-message, 
+#form .empty .empty-message {
+	display: block;
+
+}
+
+#form .error-message, 
+#form .empty-message {
+	display: none;
+}
+
+#owl .item a img {
+	display: none;
+}
+
+#owl .item a img+img {
+	display: block;
+	position: relative;
+}
+
+#owl .item a:hover img {
+	display: block;
+}
+
+#owl .item a:hover img+img {
+	display: none;
+}
+
+a.gal:hover img {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}

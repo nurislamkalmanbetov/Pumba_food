@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Home</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/camera.css">
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/script.js"></script> 
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/owl.carousel.js"></script> 
+     <script src="js/camera.js"></script>
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <script>
+       $(document).ready(function(){
+        jQuery('#camera_wrap').camera({
+            loader: false,
+            pagination: false ,
+            minHeight: '300',
+            thumbnails: false,
+            height: '58.72340425531915%',
+            caption: true,
+            navigation: true,
+            fx: 'mosaic'
+          });        
+        /*carousel*/
+        var owl = $("#owl"); 
+            owl.owlCarousel({
+            items : 7, //10 items above 1000px browser width
+            itemsDesktop : [995,5], //5 items between 1000px and 901px
+            itemsDesktopSmall : [767, 2], // betweem 900px and 601px
+            itemsTablet: [700, 2], //2 items between 600 and 0
+            itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+            navigation : true,
+            pagination :  false
+            });
+        var owl = $("#owl1"); 
+            owl.owlCarousel({
+            items : 6, //10 items above 1000px browser width
+            itemsDesktop : [995,6], //5 items between 1000px and 901px
+            itemsDesktopSmall : [767, 2], // betweem 900px and 601px
+            itemsTablet: [700, 2], //2 items between 600 and 0
+            itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+            navigation : true,
+            pagination :  false
+            });  
+        $().UItoTop({ easingType: 'easeOutQuart' });
+                
+     }); 
+
+     </script>
+        
+   
+    <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+    <![endif]-->
+     </head>
+
+     <body class="page1" id="top">
+
+
+  <div class="container_12">
+    <div class="grid_12"><header>
+    <h1>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Your Happy Family">
+        </a>
+      </h1>
+      <div class="h_phone">
+        1 (800) 123 1234
+      </div>
+      <div class="clear"></div>
+    <!--==============================header=================================-->
+      <div class="menu_block ">
+        <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+        <ul class="sf-menu">
+         <li class="current"><a href="index.html">Home</a></li>
+         <li><a href="index-1.html">about us</a></li>
+         <li><a href="index-2.html">menu &amp; specials</a>
+           <ul>
+              <li><a href="#">columns 01</a></li>
+              <li><a href="#">columns 02</a></li>
+              <li><a href="#">columns 03</a>
+                <ul>
+                  <li><a href="#">columns 04</a></li>
+                  <li><a href="#">columns 05</a></li>
+                </ul>
+              </li>
+           </ul>
+         </li>
+         <li><a href="index-3.html">price list</a></li>
+         <li><a href="index-4.html">contact us</a></li>
+        </ul>
+        </nav>
+        <div class="clear"></div>       
+      </div>
+      <div class="slider_wrapper ">
+  <div id="camera_wrap" class="">
+    <div data-src="images/slide.jpg">
+      <div class="caption fadeIn">
+        <h2>Fried steak on <br> a grill from beef <span>from $23.99</span></h2>
+        <a href="#">book now!</a>
+      </div>
+    </div>
+    <div data-src="images/slide1.jpg">
+      <div class="caption fadeIn">
+        <h2>Japanese <br>sushi and rolls <span>from $23.99</span></h2>
+        <a href="#">book now!</a>
+      </div>
+    </div>
+    <div data-src="images/slide2.jpg">
+      <div class="caption fadeIn">
+        <h2>Delicious <br>Mexican tacos<span>from $23.99</span></h2>
+        <a href="#">book now!</a>
+      </div>
+    </div>
+    <div data-src="images/slide3.jpg">
+      <div class="caption fadeIn">
+        <h2>Colorful <br>macaroons<span>from $23.99</span></h2>
+        <a href="#">book now!</a>
+      </div>
+    </div>
+    <div data-src="images/slide4.jpg">
+      <div class="caption fadeIn">
+        <h2>Italian brick oven <br>pizza<span>from $23.99</span></h2>
+        <a href="#">book now!</a>
+      </div>
+    </div>
+  </div> 
+</div>
+      
+         </header>
+    </div>
+  </div>
+<div class="page1_block">
+  <div class="container_12">
+    <div class="grid_12">
+      <ul class="banners">
+        <li><a href="#"><img src="images/ban_icon1.png" alt="">bbq</a></li>
+        <li><a href="#"><img src="images/ban_icon2.png" alt="">seafood</a></li>
+        <li><a href="#"><img src="images/ban_icon3.png" alt="">salads</a></li>
+        <li><a href="#"><img src="images/ban_icon4.png" alt="">soups</a></li>
+        <li><a href="#"><img src="images/ban_icon5.png" alt="">bakery</a></li>
+        <li><a href="#"><img src="images/ban_icon6.png" alt="">desserts</a></li>
+        <li><a href="#"><img src="images/ban_icon7.png" alt="">drinks</a></li>
+        <li><a href="#"><img src="images/ban_icon8.png" alt="">pizza</a></li>
+      </ul>
+      <div class="clear"></div>
+      <form id="search" action="search.php" method="GET">
+        <div class="title">Quick search:</div>
+        <div class="rel">
+        <label>
+          <input type="text" name="s" value="Products"
+           onblur="if (this.value == '') {this.value = 'Products';}"
+    onfocus="if (this.value == 'Products') {this.value = '';}">
+        </label>
+        <a onClick="document.getElementById('search').submit()" class="">search</a>
+        </div>
+         <div class="clear"></div>
+       </form>
+       <a href="#" class="cut">advanced search</a>
+    </div>
+  </div>
+</div>
+<div class="ord">
+  <div class="container_12">
+    <div class="grid_12">
+      <ul>
+        <li><a href="#" class="maxheight">
+            <div class="count">01</div>
+            Enter your <br> Address
+          </a></li>
+        <li><a href="#" class="maxheight">
+            <div class="count">02</div>
+            Select <br> a Restaurant
+          </a></li>
+        <li><a href="#" class="maxheight">
+            <div class="count">03</div>
+            Order Online, <br>Enjoy
+          </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--==============================Content=================================-->
+<div class="content">
+  <div class="container_12">
+  <div class="grid_12">
+    <div class="block1">
+      <div class="grid_3 prefix_1 alpha">
+        <h3>gift certificates</h3>
+        Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus. <br> <a href="#" class="btn">get certificate!</a>
+      </div>
+      <div class="grid_3 prefix_1 ">
+        <h3>meet our mobile version</h3>
+        Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus  <br> <a href="#" class="btn">download now!</a>
+      </div>
+      <div class="grid_4 omega">
+        <img src="images/mob_img.png" alt="" class="mob_img">
+      </div>
+      <div class="clear"></div>
+      <div id="owl">
+        <div class="item"><a href="#"><img class="" src="images/logo1.png" alt=""><img src="images/blogo1.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo2.png" alt=""><img src="images/blogo2.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo3.png" alt=""><img src="images/blogo3.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo4.png" alt=""><img src="images/blogo4.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo5.png" alt=""><img src="images/blogo5.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo6.png" alt=""><img src="images/blogo6.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo7.png" alt=""><img src="images/blogo7.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo1.png" alt=""><img src="images/blogo1.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo2.png" alt=""><img src="images/blogo2.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo3.png" alt=""><img src="images/blogo3.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo4.png" alt=""><img src="images/blogo4.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo5.png" alt=""><img src="images/blogo5.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo6.png" alt=""><img src="images/blogo6.png" alt=""></a></div>
+        <div class="item"><a href="#"><img src="images/logo7.png" alt=""><img src="images/blogo7.png" alt=""></a></div>
+      </div>
+      <div class="clear"></div>
+      <div class="block2">
+        <div class="title"><span>25,000</span> reasons not to cook</div>
+        <p>with 25,000 restaurant menus in  more than 100 US 
+  cities, we give you over a million dishes to choose from</p>
+        <span>Enjoy.</span>
+      </div>      
+    </div>
+    <h3 class="mb0">This week`s specials:<span class="col1">free shipping on orders over $99</span></h3>
+    <div id="owl1">
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img1.jpg" alt=""></div>
+          <div class="text1">Chinese <br>food<span class="col1">$15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img2.jpg" alt=""></div>
+          <div class="text1">seafood <br>pasta<span class="col1">$15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img3.jpg" alt=""></div>
+          <div class="text1">Seafood <br>Paella<span class="col1">$15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img4.jpg" alt=""></div>
+          <div class="text1">fast <br>food<span class="col1">$15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img5.jpg" alt=""></div>
+          <div class="text1">Lamb <br>steak<span class="col1">$15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img6.jpg" alt=""></div>
+          <div class="text1">Chocolate <br>cupcakes<span class="col1">$15.99</span></div>
+        </a></div>
+        <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img1.jpg" alt=""></div>
+          <div class="text1">Chinese <br>food<span class="col1">$15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img2.jpg" alt=""></div>
+          <div class="text1">seafood <br>pasta<span class="col1">$15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img3.jpg" alt=""></div>
+          <div class="text1">Seafood <br>Paella<span class="col1">$15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><span></span><img src="images/page1_img4.jpg" alt=""></div>
+          <div class="text1">fast <br>food<span class="col1">15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img5.jpg" alt=""></div>
+          <div class="text1">Lamb <br>steak<span class="col1">$15.99</span></div>
+        </a></div>
+      <div class="item"><a href="#">
+          <div class="bord_img"><span></span><img src="images/page1_img6.jpg" alt=""></div>
+          <div class="text1">Chocolate <br>cupcakes<span class="col1">$15.99</span></div>
+        </a></div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--==============================footer=================================-->
+
+  <footer>   
+    <div class="container_12">
+      <div class="grid_12">
+        
+        <a href="index.html" class="f_logo">
+          <img src="images/f_logo.png" alt="">
+        </a>
+        <div class="copy">
+        &copy; <span id="copyright-year"></span> <br> <a href="index-5.html">Privacy Policy</a> <!--{%FOOTER_LINK} --><div></div>
+        </div>
+      </div>
+    </div>  
+  </footer>
+  
+</body>
+</html>
+

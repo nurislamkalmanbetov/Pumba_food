@@ -1,0 +1,1010 @@
+@import "reset.css";
+@import "skeleton.css";
+@import "superfish.css";
+
+
+@import url(http://fonts.googleapis.com/css?family=Patua+One);html {
+	width: 100%;
+
+}
+
+a[href^="tel:"] {
+ color: inherit;
+ text-decoration: none;
+}
+
+* {
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	position: relative;
+	min-width: 960px;
+	background: #fff;
+    color: #878787;
+    background: url(../images/bg_body.png) 0 0 repeat #262626;
+    font: 13px/18px 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+
+strong {
+	font-weight: 700;
+}
+
+address {
+	font-style: normal;
+}
+
+p {
+	margin-bottom: 18px;
+}
+
+
+input {
+	border-radius: 0 !important;
+	outline: none !important;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+
+/****Heads****/
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Patua One', cursive;
+	color: #202020;
+    font-weight: normal;
+}
+
+h2 {
+    padding-top: 29px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 44px;
+}
+
+h2 span {
+    display: block;
+    text-transform: uppercase;
+    color: #af8747;
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 38px;
+    margin-bottom: 22px;
+}
+
+.block1 h3 {
+    padding-top: 33px;
+    margin-bottom: 16px;
+}
+
+h3 span {
+    display: block;
+    padding-top: 1px;
+}
+
+.page1 h3 {
+    padding-top: 33px;
+}
+
+h3.head1 {
+    padding-top: 34px;
+}
+
+h3.head2 {
+    padding-top: 0px;
+}
+
+/****Lists****/
+
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+ul.list li {
+}
+
+ul.list li a:hover {
+}
+
+ul.list  li+li {
+}
+
+/****Links****/
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+a:hover {
+	color: #af8747;
+}
+
+a.btn {
+    letter-spacing: 1px;
+    margin-right: 37px;
+    background-color: #af8747;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    cursor: pointer;
+    top: 0;
+    padding: 8px 30px 11px 19px;
+    font: 14px/18px 'Patua One', cursive;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 18px;
+}
+
+a.btn:after {
+    position: absolute;
+    width: 37px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    display: block;
+    background: url(../images/btn_icon.png) center center no-repeat #946d30;
+    right: -37px;
+}
+
+a.btn:hover {
+    background-color: #4a4a4a;
+}
+
+
+/****classes****/
+
+.mb0 {
+	margin-bottom: 0px !important;
+}
+.m0 {
+	margin: 0 !important;
+}
+.pad0 {
+	padding: 0 !important;
+}
+
+.pad1 {
+}
+
+
+.img_inner {
+	max-width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	margin-top: 4px;
+}
+
+
+
+.fleft {
+	float: left;
+	width: auto !important;
+	margin-right: 19px;
+	margin-bottom: 0px;
+	margin-top: 4px;
+
+}
+
+
+.oh {
+	overflow: hidden;
+}
+.fright {
+	float: right !important;
+}
+.upp {
+	text-transform: uppercase !important;
+}
+
+.alright {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.wrapper, .extra_wrapper {
+	overflow: hidden;
+}
+.clear {
+	float: none !important;
+	clear: both;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+/*header*/
+
+header {
+    text-align: center;
+	display: block;
+    padding-top: 28px;
+    background: url(../images/header_bg.png) 0 0 repeat;
+}
+
+header h1 {
+	position: relative;
+    margin-bottom: 10px;
+	text-align: center;
+
+}
+
+
+.h_phone {
+    margin-bottom: 42px;
+    letter-spacing: 1px;
+    padding: 3px 50px 2px;
+    display: inline-block;
+    color: #434343;
+    font: 24px/33px 'Patua One', cursive;
+    text-transform: uppercase;
+    background: url(../images/h_phone_bg.png) center 0 no-repeat;
+}
+
+
+header h1 a {
+	display: inline-block;
+	overflow: hidden;
+	width:  176px;
+    height: 109px;
+	font-size: 0;
+	line-height: 0;
+	
+	text-indent: -999px;
+	transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+}
+
+header h1 a img {
+	display: block;
+}
+
+.page1_block {
+    position: relative;
+    z-index: 999;
+    padding-bottom: 30px;
+}
+
+.banners {
+}
+
+.banners li {
+    float: left;
+    background-color: #353535;
+    width: 12.5%;
+    position: relative;
+}
+
+.banners li img {
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.banners li a {
+    position: relative;
+    z-index: 800;
+    letter-spacing: 2px;
+    font: 14px/18px 'Patua One', cursive;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding: 27px 0 43px;
+    display: block;
+    text-align: center;
+}
+
+.banners li a:hover {
+    margin-top: -24px;
+    padding-bottom: 67px;
+    background-color: #af8747;
+}
+
+.banners li+li:after {
+    background-color: #4a4949;
+    width: 1px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: '';
+}
+
+#search {
+    overflow: hidden;
+    padding-top: 31px;
+    float: left;
+    position: relative;
+}
+
+#search .title {
+    padding-top: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    float: left;
+    min-width: 118px;
+    letter-spacing: 1px;
+}
+
+#search .rel {
+    position: relative;
+}
+
+a.cut {
+    margin-left: 26px;
+    letter-spacing: 1px;
+    margin-top: 39px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #af8747;
+}
+
+a.cut:hover {
+    color: #fff;
+}
+
+
+#search a:hover {
+    background-color: #393939;
+}
+
+#search label {
+    display: block;
+}
+
+#search  .rel {
+    float: left;
+    padding-right: 160px;
+}
+
+#search input {
+     width: 343px;
+     border: 1px solid #424242;
+     background: none;
+     letter-spacing: 1px;
+     height: 37px;
+     text-transform: uppercase;
+     background-color: #282828;
+     padding: 8px 14px 11px;
+     font: 13px/18px 'Trebuchet MS', Arial, Helvetica, sans-serif;
+     color: #757575;
+     box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-box-sizing: border-box; /*Firefox 1-3*/
+    -webkit-box-sizing: border-box; /* Safari */
+}
+
+#search a {
+    letter-spacing: 1px;
+    margin-right: 37px;
+    background-color: #af8747;
+    display: block;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    top: 0;
+    padding: 8px 20px 11px 26px;
+    font: 14px/18px 'Patua One', cursive;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#search a:after {
+    position: absolute;
+    width: 37px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    display: block;
+    background: url(../images/search_icon.png) center 0 no-repeat #946d30;
+    right: -37px;
+}
+
+.ord ul{
+    font: 24px/28px 'Patua One', cursive;
+    overflow: hidden;
+    border-top: 9px solid #af8747;
+}
+
+.ord li {
+    float: left;
+    width: 32%;
+    background-color: #fff;
+}
+
+.ord li {
+    text-transform: uppercase;
+    color: #af8747;
+    position: relative;
+}
+
+.ord li+li {
+    width: 34%;
+}
+
+.ord li+li .count {
+    margin-right: 14px;
+}
+
+.ord li+li:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #af8747;
+    content: '';
+}
+
+.ord li a {
+    letter-spacing: 1px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding: 22px 0 26px 20px;
+    display: block;
+}
+
+.ord li a:hover {
+    background-color: #af8747;
+    padding-left: 0;
+    color: #fff;
+}
+
+.ord li a:hover .count {
+    color: #946d30;
+}
+
+.ord .count {
+    float: left;
+    margin-right: 22px;
+    color: #eee;
+    line-height: 56px;
+    font-size: 60px;
+}
+
+/**Content**/
+.content {
+    padding-bottom: 70px;
+
+}
+
+.page1  .content {
+    padding-bottom: 70px;
+}
+
+.block1 {
+    background-color: #353535;
+}
+
+
+.mob_img {
+    margin-top: 35px;
+}
+
+.block2 {
+    font: 24px/26px 'Patua One', cursive;
+    color: #af8747; 
+    border-bottom: 9px solid #af8747;
+    background: url(../images/block2_bg.png) right 0 no-repeat #fff; 
+    padding: 55px 236px 32px 80px;    
+}
+
+.block2 .title {
+    letter-spacing: 2px;
+    color: #2b2b2b;
+    margin-bottom: 17px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.block2 .title span {
+    letter-spacing: 0px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: -9px;
+    font-size: 60px;
+}
+
+.block2  p {
+    margin-bottom: 13px;
+}
+
+.block2 span {
+    color: #2b2b2b;
+}
+
+
+
+.text1 {
+    letter-spacing: 1px;
+    font: 14px/18px 'Patua One', cursive;
+    color: #fff;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+.text1 span {
+    display: block;
+}
+
+.page1 .text1 span{
+    padding-top: 6px;
+}
+
+.col1 {
+    color: #af8747;
+}
+
+.col1 a:hover {
+    color: #fff;
+}
+
+.block3 .drop {
+    float: left;
+    overflow: hidden;
+    min-width: 35px;
+    font: 24px/26px 'Patua One', cursive;
+}
+
+.block3+.block3 {
+    margin-top: 22px;
+}
+
+.bq1 {
+    background: url(../images/quotes.png) 0 3px no-repeat;
+    padding-left: 36px;
+    margin-top: -1px;
+    padding-right: 29px;
+}
+
+.bq1 .alright {
+    padding-top: 12px;
+}
+
+.ban1 {
+    margin-top: 3px;
+}
+
+.gallery {
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.gallery  .text1 {
+    margin-bottom: 26px;
+}
+
+.gallery  .text1 span {
+    padding-top: 7px;
+}
+
+a.gal {
+    display: block;
+    margin-bottom: 15px;
+    background: url(../images/magnify.png) center center no-repeat;
+}
+
+a.gal:hover img {
+    opacity: 0.2;
+}
+
+a.gal img {
+    width: 100%;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+.prices {
+    padding-right: 24px;
+    margin-top: -1px;
+}
+
+.prices li {
+    overflow: hidden;
+}
+
+.prices li +li {
+    margin-top: 12px;
+}
+
+.prices li +li+li {
+    margin-top: 7px;
+}
+
+.prices li .fl {
+    float: left;
+}
+
+.prices li .fr {
+    min-width: 27px;
+    float: right;
+}
+
+.prices li .dot {
+    background: url(../images/dots.png) 0 bottom repeat-x;
+    overflow: hidden;
+    height: 14px;
+}
+
+.cl1 {
+    height: 37px;
+}
+
+.fleft.f1 {
+    margin-top: 6px;
+    margin-right: 21px;
+}
+
+.prv .grid_4 h3 {
+    margin-bottom: 21px;
+}
+
+.prv p+.text1 {
+    padding-top: 4px;
+}
+
+/**Map**/
+
+.map {
+    overflow: hidden;
+    padding-top: 4px;
+    position: relative;
+    position: relative;
+}
+ 
+
+.map figure {
+
+    position: relative;
+	display: block;
+    margin-bottom: 15px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.map figure iframe {
+	width: 100%;
+	height: 275px;
+	max-width: 100%;
+}
+.map address {
+    float: left;
+	display: block;
+}
+
+.link-1{
+    color: #dc0c0c;
+    font-weight: bold;
+}
+
+a.link-1:hover {
+    color: #202020;
+}
+
+
+
+.map address+address {
+    margin-left: 52px;
+}
+
+ address dd span {
+	min-width: 92px;
+	display: inline-block;
+	text-align: left;
+}
+
+.map address dd span.col1 {
+	min-width: 0;
+}
+
+
+/**Footer**/
+footer {
+	display: block;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    background: url(../images/bg_footer.png) center 18px no-repeat;
+
+}
+
+.copy {
+    padding-top: 6px;
+    text-align: center;
+    color: #3f3f3f;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font: 14px/18px 'Patua One', cursive;
+}
+
+
+a.f_logo {
+    margin-top: -2px;
+    display: inline-block;
+}
+
+
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 40px;
+    left: 51%;
+    margin-left: 500px;
+    overflow: hidden;
+    width: 58px;
+    height: 58px;
+    border: none;
+    text-indent: -999px;
+    z-index: 20;
+    background: url(../images/totop.png) no-repeat left 0;
+    transition: 0s ease;
+    -o-transition: 0s ease;
+    -webkit-transition: 0s ease;
+}
+#toTop:hover {
+    outline: none;
+    background-position: right 0;
+}
+
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+
+@media only screen and (max-width: 995px) {
+ body {
+ min-width: 768px;
+}
+
+
+
+.f1 {
+    margin-bottom: 10px;
+}
+
+ .map address+address {
+    float: left;
+ 	margin-left: 30px;
+ }
+ .map figure,  .map figure iframe,  #form input,  #form textarea,  #form .success {
+ width: 100% !important;
+ float: none !important;
+}
+ #form .success {
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -o-box-sizing: border-box;
+ box-sizing: border-box;
+}
+ .map figure {
+ height: auto !important;
+}
+ .extra_wrapper {
+ overflow: visible;
+}
+
+.map figure {
+	margin-bottom: 15px;
+}
+
+.nowrap {
+    white-space: normal;
+}
+
+.ord li a {
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.ord li .count {
+    margin-bottom: 10px;
+}
+
+
+.block2 {
+    padding-right: 60px;
+    background-image: none;
+}
+
+
+.block2 .title {
+    line-height: 38px;
+}
+
+.mob_img {
+    margin-top: 100px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+ body {
+ min-width: 420px;
+}
+
+.ord li + li:after {
+    display: none;
+}
+
+.map address {
+    float: none;
+    margin-left: 0 !important;
+ }
+
+.map address +address {
+    margin-top: 30px;
+}
+
+
+header h1 {
+	display: block;
+	width: auto;
+    margin-left: 0;
+    position: relative;
+	height: auto;
+}
+
+.img_inner {
+width: 100% !important;
+float: none !important;
+margin-right: 0 !important;
+margin-bottom: 20px !important;
+}
+
+h1 a {
+	max-width: 90%;
+}
+
+
+.img_inner img {
+	width: 100%;
+}
+
+
+ header h1 {
+ margin-bottom: 20px;
+ float: none;
+ text-align: center;
+}
+ header h1 a {
+ 	width: auto;
+ 	display: inline-block;
+ height: auto;
+}
+ header h1 a img {
+}
+
+ .map {
+ 	padding-right: 0px !important;
+ }
+
+ .map figure iframe {
+ width: 100%;
+ height: 300px;
+}
+ .map address {
+ 	margin-right: 0;
+}
+
+
+ .content .noresize {
+ width: auto !important;
+ float: left !important;
+ margin-right: 20px !important;
+ margin-top: 4px !important;
+}
+
+ .img_inner {
+ margin-top: 30px;
+}
+
+.none {
+    clear: both;
+}
+
+#search input {
+    width: 290px;
+}
+
+.banners li {
+    float: none;
+    width: auto;
+}
+
+#search .title {
+    padding-bottom: 22px;
+}
+
+#search input {
+    width: 260px;
+}
+
+.ord li {
+    width: auto !important;
+    float: none;
+}
+
+.block1 .grid_3, .block1 .grid_4 {
+    width: 400px !important;
+    margin-left: 10px !important;
+}
+
+#owl1 {
+    margin-top: 0;
+}
+
+#owl1 img {
+    width: 100%;
+}
+
+.caption {
+    display: none;
+}
+
+.banners li+li:after {
+    display: none;
+}
+
+}
+
+
+@media only screen and (max-width: 479px) {
+ body {
+ min-width: 300px;
+}
+
+.block2 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.block1 .grid_3, .block1 .grid_4 {
+    width: 280px !important;
+    margin-left: 10px !important;
+}
+
+#search input {
+    width: 100%;
+}
+
+}

@@ -1,0 +1,8 @@
+psql -U postgres
+
+CREATE DATABASE pumba_food_db;
+CREATE USER postgres  WITH PASSWORD 'qwerty123';
+ALTER ROLE pumba_user   SET client_encoding TO 'utf-8';
+ALTER ROLE pumba_user   SET default_transaction_isolation TO 'read committed';
+ALTER ROLE pumba_user   SET timezone TO 'Asia/Bishkek';
+GRANT ALL PRIVILEGES ON DATABASE pumba_food_db TO pumba_user ;
