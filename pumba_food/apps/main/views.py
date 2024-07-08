@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from .models import *
+from .models import AboutUs
 
 # Create your views here 
 
 
 def home_view(request):
-    return render(request, 'pages/home.html')
+    return render(request, 'base.html')
 
 # def about_us(request):
 #     return render(request, 'pages/about_us.html')

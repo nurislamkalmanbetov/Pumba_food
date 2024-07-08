@@ -36,14 +36,14 @@
        </blockquote>
     </div>
     <div class="grid_8">
-      <h3>Our history</h3>
+      <h3>Наша история</h3>
 
       {% for about_us in about_us_list %}
         <div class="text1 col1">
           <p>{{ about_us.history|safe }}</p>
 
         </div>
-        <h3>Why us</h3>
+        <h3>Почему мы?</h3>
         <p>{{ about_us.why_us|safe }}</p>
       {% endfor %}
 

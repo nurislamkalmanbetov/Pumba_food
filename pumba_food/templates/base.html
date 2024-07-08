@@ -73,7 +73,7 @@
 
                 <h1>
                     <a href="index.html">
-                      <img src="images/logo.png" alt="Your Happy Family">
+                      <img src="{% static 'images/logo.png' %}" alt="Your Happy Family">
                     </a>
                   </h1>
                   <div class="h_phone">
@@ -84,7 +84,7 @@
                   <div class="menu_block ">
                     <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                     <ul class="sf-menu">
-                    <li class="current"><a href="{% url 'home' %}">Home</a></li>
+                    <li class="current"><a href="#">Home</a></li>
                     <li><a href="{% url 'about_us' %}">about us</a></li>
                     <li><a href="index-2.html">menu &amp; specials</a>
                       <ul>
@@ -106,19 +106,19 @@
                   </div>
                   <div class="slider_wrapper ">
                 <div id="camera_wrap" class="">
-                <div data-src="images/slide.jpg">
+                <div data-src="{% static 'images/slide.jpg' %}">
                   <div class="caption fadeIn">
                     <h2>Fried steak on <br> a grill from beef <span>from $23.99</span></h2>
                     <a href="#">book now!</a>
                   </div>
                 </div>
-                <div data-src="images/slide1.jpg">
+                <div data-src="{% static 'images/slide1.jpg' %}">
                   <div class="caption fadeIn">
                     <h2>Japanese <br>sushi and rolls <span>from $23.99</span></h2>
                     <a href="#">book now!</a>
                   </div>
                 </div>
-                <div data-src="images/slide2.jpg">
+                <div data-src="{% static 'images/slide2.jpg' %}">
                   <div class="caption fadeIn">
                     <h2>Delicious <br>Mexican tacos<span>from $23.99</span></h2>
                     <a href="#">book now!</a>
