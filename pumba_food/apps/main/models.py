@@ -13,8 +13,8 @@ class AboutUs(models.Model):
     
 
 class Employees(models.Model):
-    image = models.ImageField(verbose_name='Фото')
-    employess_name = models.CharField(max_length=255, verbose_name='Имя')
+    image = models.ImageField(upload_to='about_us/', verbose_name='Фото работника')
+    employess_name = models.CharField(max_length=255, verbose_name='ФИО')
     position = models.CharField(max_length=255, verbose_name='Должность')
 
     class Meta:
