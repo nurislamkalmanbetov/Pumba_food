@@ -38,9 +38,9 @@ class ContactUs(models.Model):
     message = models.TextField(verbose_name='Сообщение')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
 
-    class Meta:
-        verbose_name = 'Контактное сообщение'
-        verbose_name_plural = 'Контактные сообщения'
-
     def __str__(self):
-        return f'{self.name} - {self.email}'
+        return self.email 
+    
+    class Meta:
+        verbose_name = 'Наш контакт'
+        verbose_name_plural = 'Наши контакты'
