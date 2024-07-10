@@ -11,8 +11,3 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Food)
 class FoodAdmin(admin.ModelAdmin):
     list_display = ['id','name','description','price','image','gram','category',]
-
-
-@admin.register(ContactUs)
-class ContactUsAdmin(admin.ModelAdmin):
-    list_display = ['id','name','email','phone','message','created_at',]

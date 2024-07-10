@@ -1,12 +1,19 @@
+from typing import Any
 from django.shortcuts import render
-from .models import AboutUs
+from django.views.generic import TemplateView
+from .models import *
 
-# Create your views here 
 
 
-# def about_us(request):
-#     return render(request, 'pages/about_us.html')
 
-def about_us(request):
-    about_us_data = AboutUs.objects.all()   # .first() Если у вас только одна запись
-    return render(request, 'pages/about_us.html', {'about_us_list': about_us_data})
+class IndexView(TemplateView):
+    template_name = 'pages/index_home.html'
+
+class AboutUsView(TemplateView):
+    template_name = 'pages/about_us.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['about_us'] = AboutUs.objects.first()
+        context['employees'] = Employees.objects.all()
+        return context

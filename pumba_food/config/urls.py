@@ -5,8 +5,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main/', include('apps.main.urls')),
-    path('', include('apps.product.urls')),
+    path('', include('apps.main.urls')),
+    path('form/', include('apps.form.urls')),
+    # path('product/', include('apps.product.urls')),
 ]
 
 if settings.DEBUG: # Для стилей, картинок, ссылок
