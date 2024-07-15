@@ -84,9 +84,9 @@
                   <div class="menu_block ">
                     <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                     <ul class="sf-menu">
-                    <li class="current"><a href="#">Home</a></li>
-                    <li><a href="{% url 'about_us' %}">about us</a></li>
-                    <li><a href="index-2.html">menu &amp; specials</a>
+                    <li class="current"><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about_us' %}">About us</a></li>
+                    <li><a href="{% url 'product_list' %}">Product &amp; specials</a>
                       <ul>
                           <li><a href="#">columns 01</a></li>
                           <li><a href="#">columns 02</a></li>
@@ -98,101 +98,19 @@
                           </li>
                       </ul>
                     </li>
-                    <li><a href="index-3.html">price list</a></li>
-                    <li><a href="#">contact us</a></li>
+                    <li><a href="index-3.html">Prices</a></li>
+                    <li><a href="{% url 'contact_us' %}">Contact us</a></li>
                     </ul>
                     </nav>
                     <div class="clear"></div>       
                   </div>
-                  <div class="slider_wrapper ">
-                <div id="camera_wrap" class="">
-                <div data-src="{% static 'images/slide.jpg' %}">
-                  <div class="caption fadeIn">
-                    <h2>Fried steak on <br> a grill from beef <span>from $23.99</span></h2>
-                    <a href="#">book now!</a>
-                  </div>
-                </div>
-                <div data-src="{% static 'images/slide1.jpg' %}">
-                  <div class="caption fadeIn">
-                    <h2>Japanese <br>sushi and rolls <span>from $23.99</span></h2>
-                    <a href="#">book now!</a>
-                  </div>
-                </div>
-                <div data-src="{% static 'images/slide2.jpg' %}">
-                  <div class="caption fadeIn">
-                    <h2>Delicious <br>Mexican tacos<span>from $23.99</span></h2>
-                    <a href="#">book now!</a>
-                  </div>
-                </div>
-                <div data-src="{% static 'images/slide3.jpg' %}">
-                  <div class="caption fadeIn">
-                    <h2>Colorful <br>macaroons<span>from $23.99</span></h2>
-                    <a href="#">book now!</a>
-                  </div>
-                </div>
-                <div data-src="{% static 'images/slide4.jpg' %}">
-                  <div class="caption fadeIn">
-                    <h2>Italian brick oven <br>pizza<span>from $23.99</span></h2>
-                    <a href="#">book now!</a>
-                  </div>
-                </div>
-                </div> 
-                </div>
+
                   
             </header>
 
           </div>
           </div>
-          <div class="page1_block">
-            <div class="container_12">
-              <div class="grid_12">
-                <ul class="banners">
-                  <li><a href="#"><img src="{% static 'images/ban_icon1.png' %}" alt="">bbq</a></li>
-                  <li><a href="#"><img src="{% static 'images/ban_icon2.png' %}" alt="">seafood</a></li>
-                  <li><a href="#"><img src="{% static 'images/ban_icon3.png' %}" alt="">salads</a></li>
-                  <li><a href="#"><img src="{% static 'images/ban_icon4.png' %}" alt="">soups</a></li>
-                  <li><a href="#"><img src="{% static 'images/ban_icon5.png' %}" alt="">bakery</a></li>
-                  <li><a href="#"><img src="{% static 'images/ban_icon6.png' %}" alt="">desserts</a></li>
-                  <li><a href="#"><img src="{% static 'images/ban_icon7.png' %}" alt="">drinks</a></li>
-                  <li><a href="#"><img src="{% static 'images/ban_icon8.png' %}" alt="">pizza</a></li>
-                </ul>
-                <div class="clear"></div>
-                <form id="search" action="search.php" method="GET">
-                  <div class="title">Quick search:</div>
-                  <div class="rel">
-                  <label>
-                    <input type="text" name="s" value="Products"
-                    onblur="if (this.value == '') {this.value = 'Products';}"
-              onfocus="if (this.value == 'Products') {this.value = '';}">
-                  </label>
-                  <a onClick="document.getElementById('search').submit()" class="">search</a>
-                  </div>
-                  <div class="clear"></div>
-                </form>
-                <a href="#" class="cut">advanced search</a>
-              </div>
-            </div>
-          </div>
-          <div class="ord">
-            <div class="container_12">
-              <div class="grid_12">
-                <ul>
-                  <li><a href="#" class="maxheight">
-                      <div class="count">01</div>
-                      Enter your <br> Address
-                    </a></li>
-                  <li><a href="#" class="maxheight">
-                      <div class="count">02</div>
-                      Select <br> a Restaurant
-                    </a></li>
-                  <li><a href="#" class="maxheight">
-                      <div class="count">03</div>
-                      Order Online, <br>Enjoy
-                    </a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+
 
           <!--==============================Content=================================-->
 {% block content %}

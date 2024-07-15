@@ -49,6 +49,7 @@
 
 
       <h3 class="head1">our work team</h3>
+
       {% for emp in employees %}
       <div class="grid_2 alpha">
         <img src="{{emp.image.url}}" alt="" class="img_inner">
@@ -56,6 +57,7 @@
         <div class="text2">{{ emp.position }}</div>
       </div>
       {% endfor %}
+
     </div>
   </div>
 </div>

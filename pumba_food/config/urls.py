@@ -7,7 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.main.urls')),
     path('form/', include('apps.form.urls')),
-    # path('product/', include('apps.product.urls')),
+    path('product/', include('apps.product.urls')),
 ]
 
 if settings.DEBUG: # Для стилей, картинок, ссылок
