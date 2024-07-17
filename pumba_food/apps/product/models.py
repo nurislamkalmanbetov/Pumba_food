@@ -31,3 +31,16 @@ class Food(models.Model):
         verbose_name_plural = 'Блюда'
 
 
+class SpecialOffer(models.Model):
+    food = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='special_offers')
+    start_date = models.DateField(verbose_name='Дата начала')
+    end_date = models.DateField(verbose_name='Дата окончания')
+    description = models.TextField(verbose_name='Описание', blank=True, null=True)
+
+    def __str__(self):
+        return f"Special Offer: {self.food.name}"
+
+    class Meta:
+        verbose_name = 'Специальное предложение'
+        verbose_name_plural = 'Специальные предложения'
+
