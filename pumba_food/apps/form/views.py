@@ -4,7 +4,9 @@ from .forms import ContactForm
 # Create your views here.
 
 def contact_view(request):
+    
     message_send_success = False 
+    
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():

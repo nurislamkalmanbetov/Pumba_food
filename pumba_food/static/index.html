@@ -247,54 +247,17 @@
     </div>
     <h3 class="mb0">This week`s specials:<span class="col1">free shipping on orders over $99</span></h3>
     <div id="owl1">
+
+      {% for offer in special_offers %}
+
       <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img1.jpg" alt=""></div>
+          <div class="bord_img"><span></span><img src="{{ offer.food.image.url }}" alt=""></div>
           <div class="text1">Chinese <br>food<span class="col1">$15.99</span></div>
         </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img2.jpg" alt=""></div>
-          <div class="text1">seafood <br>pasta<span class="col1">$15.99</span></div>
-        </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img3.jpg" alt=""></div>
-          <div class="text1">Seafood <br>Paella<span class="col1">$15.99</span></div>
-        </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img4.jpg" alt=""></div>
-          <div class="text1">fast <br>food<span class="col1">$15.99</span></div>
-        </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img5.jpg" alt=""></div>
-          <div class="text1">Lamb <br>steak<span class="col1">$15.99</span></div>
-        </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img6.jpg" alt=""></div>
-          <div class="text1">Chocolate <br>cupcakes<span class="col1">$15.99</span></div>
-        </a></div>
-        <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img1.jpg" alt=""></div>
-          <div class="text1">Chinese <br>food<span class="col1">$15.99</span></div>
-        </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img2.jpg" alt=""></div>
-          <div class="text1">seafood <br>pasta<span class="col1">$15.99</span></div>
-        </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img3.jpg" alt=""></div>
-          <div class="text1">Seafood <br>Paella<span class="col1">$15.99</span></div>
-        </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><span></span><img src="images/page1_img4.jpg" alt=""></div>
-          <div class="text1">fast <br>food<span class="col1">15.99</span></div>
-        </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img5.jpg" alt=""></div>
-          <div class="text1">Lamb <br>steak<span class="col1">$15.99</span></div>
-        </a></div>
-      <div class="item"><a href="#">
-          <div class="bord_img"><span></span><img src="images/page1_img6.jpg" alt=""></div>
-          <div class="text1">Chocolate <br>cupcakes<span class="col1">$15.99</span></div>
-        </a></div>
+
+      {% endfor %}
+
+
     </div>
   </div>
   </div>

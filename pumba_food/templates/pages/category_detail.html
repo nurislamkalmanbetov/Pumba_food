@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {{ category.name }}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <h3>{{ category.name }}</h3>
+            <div class="clear"></div>
+            <div class="gallery">
+                {% for food in category.foods.all %}
+                <div class="grid_3">
+                    <a href="{% url 'product_detail' food.pk %}" class="gal"><img src="{{ food.image.url }}" alt="{{ food.name }}"></a>
+                    <div class="text1"><a href="{% url 'product_detail' food.pk %}">{{ food.name }}</a><span class="col1">${{ food.price }}</span></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+  {{ product.name }}
+{% endblock %}
+
+{% block content %}
+
+<div class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <h3>{{ product.name }}</h3>
+            <div class="clear"></div>
+            <div class="gallery">
+                <div class="grid_3">
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <div class="text1">{{ product.name }}</div>
+                    <div class="description">{{ product.description }}</div>
+                    <div class="price"><span class="col1">${{ product.price }}</span></div>
+                    <div class="gram">{{ product.gram }} г</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

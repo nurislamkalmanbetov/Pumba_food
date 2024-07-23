@@ -16,7 +16,7 @@
         <div class="clear"></div>
         <ul class="banners ban1">
           {% for category in categories %}
-            <li><a href="#"><img src="{{ category.image.url }}" alt="{{ category.name }}">{{ category.name }}</a></li>
+            <li><a href="{% url 'category_detail' category.pk %}"><img src="{{ category.image.url }}" alt="{{ category.name }}">{{ category.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -25,8 +25,8 @@
 
         {% for food in products %}
         <div class="grid_3">
-          <a href="#" class="gal"><img src="{{ food.image.url }}" alt=""></a>
-          <div class="text1"><a href="#">{{ food.name }}</a><span class="col1">${{ food.price }}</span></div>
+          <a href="{% url 'product_detail' food.pk %}" class="gal"><img src="{{ food.image.url }}" alt=""></a>
+          <div class="text1"><a href="{% url 'product_detail' food.pk %}">{{ food.name }}</a><span class="col1">${{ food.price }}</span></div>
         </div>
         {% endfor %}
         
